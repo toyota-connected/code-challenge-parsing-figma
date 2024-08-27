@@ -6,7 +6,7 @@ A user on the translations team needs to know the text content, font size, font 
 ### Goals
 Write a script which aggregates this data and makes a request to a mocked API at the URL http://test-url/translations/text-parts.
 
-- Must use the Figma API directly
+- Must use the Figma API directly (See [Endpoints](https://www.figma.com/developers/api#files-endpoints))
 - Must use Typescript
 - Helper libraries/ packages for common functionalties are encouraged
 - **Bonus**: CSV reports are collected and written to disk which log statistics of the operation
