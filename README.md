@@ -12,7 +12,7 @@ Write a script which aggregates this data and makes a request to a mocked API at
 - **Bonus**: CSV reports are collected and written to disk which log statistics of the operation
 
 ### Deliverables
-1. Fork this repository and create a Pull Request
+1. Pull this repository, make changes, and create a Pull Request
 2. Include documentation on how to run the script, and how to observe its outputs
 
 ## Setup
