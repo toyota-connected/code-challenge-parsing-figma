@@ -22,8 +22,6 @@ const swaggerUI = require('@fastify/swagger-ui');
     origin: '*', // Configure for specific domains in production
   });
   
-  // Compression for API Responses
-  server.register(require('@fastify/compress'));
 
   // Register the swagger plugin
   server.register(swagger, {
