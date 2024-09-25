@@ -1,0 +1,7 @@
+export enum FigmaNodeType {
+  TEXT = 'TEXT',
+  FRAME = 'FRAME',
+  COMPONENT = 'COMPONENT',
+  INSTANCE = 'INSTANCE',
+  RECTANGLE = 'RECTANGLE',
+}
