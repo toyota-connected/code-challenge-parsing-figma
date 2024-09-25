@@ -39,7 +39,7 @@ Write a script which aggregates this data and makes a request to a mocked API at
 * API versioning to ensure backward compatibility with older clients if you need to introduce breaking changes.
 * Configured CORS (Cross-Origin Resource Sharing)  to prevent unauthorized external domains from accessing the API
 * Follow the Separation of Concerns (SoC) principle by making sure that each module/class focuses on one responsibility.
-* Enabled the compression for API responses to reduce the size of the data being transferred.
+
 
 ## Setup
 
@@ -177,7 +177,6 @@ This will execute all the tests and provide feedback on the correctness and perf
 - swagger plugin: Provides OpenAPI specification generation.
 - swaggerUI plugin: Provides an interactive Swagger UI accessible at /swagger/documentation.
 - fastify/cors: prevent unauthorized external domains from accessing the API
-- @fastify/compress: Compression for API Responses
 
 ### Testing & Development
 
