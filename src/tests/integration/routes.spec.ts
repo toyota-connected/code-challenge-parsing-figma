@@ -43,7 +43,7 @@ describe('Route Integration Tests', () => {
 
     const response = await server.inject({
       method: 'GET',
-      url: '/figma/file/'+config.figmaFileId
+      url: '/v1/figma/file/'+config.figmaFileId
     });
 
     expect(response.statusCode).toBe(200);
