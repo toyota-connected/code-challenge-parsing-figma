@@ -36,6 +36,10 @@ Write a script which aggregates this data and makes a request to a mocked API at
 * Unit and integration tests using Jest and Supertest for reliability.
 * Scalable and easily deployable with modular architecture and cloud-ready features.
 * By integrating Swagger into the app, you ensure that your API is both well-documented and easy to test, facilitating better collaboration and faster development.
+* API versioning to ensure backward compatibility with older clients if you need to introduce breaking changes.
+* Configured CORS (Cross-Origin Resource Sharing)  to prevent unauthorized external domains from accessing the API
+* Follow the Separation of Concerns (SoC) principle by making sure that each module/class focuses on one responsibility.
+* Enabled the compression for API responses to reduce the size of the data being transferred.
 
 ## Setup
 
@@ -102,13 +106,13 @@ npm run dev
 To retrieve data from the default Figma file ID specified in the .env file (which can be updated based on your access), execute the following command in your terminal:
 
 ```sh
-curl http://localhost:3000/figma/file/default-file
+curl http://localhost:3000/v1/figma/file/default-file
 ```
 
 Alternatively, you can access the same endpoint through a web browser or tools like Postman by using the URL:
 
 ```sh
-http://localhost:3000/figma/file/default-file
+http://localhost:3000/v1/figma/file/default-file
 ```
 
 The response will be returned in JSON format, similar to the following example:
@@ -145,7 +149,7 @@ This file can be shared with the translation team for further use.
 You can also retrieve data using a specific Figma file ID by calling the following endpoint (make sure you have access to the file):
 
 ```sh
-curl http://localhost:3000/figma/file/{fileId}
+curl http://localhost:3000/v1/figma/file/{fileId}
 ```
 
 Alternatively, use Postman or a browser to send a request to this endpoint. The response format will be the same as with the default file ID.
@@ -172,6 +176,8 @@ This will execute all the tests and provide feedback on the correctness and perf
 - reflect-metadata: Required for Inversify's DI system to work.
 - swagger plugin: Provides OpenAPI specification generation.
 - swaggerUI plugin: Provides an interactive Swagger UI accessible at /swagger/documentation.
+- fastify/cors: prevent unauthorized external domains from accessing the API
+- @fastify/compress: Compression for API Responses
 
 ### Testing & Development
 
