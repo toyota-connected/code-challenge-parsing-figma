@@ -18,6 +18,13 @@ const swaggerUI = require('@fastify/swagger-ui');
   });
 
 
+  server.register(require('@fastify/cors'), {
+    origin: '*', // Configure for specific domains in production
+  });
+  
+  // Compression for API Responses
+  server.register(require('@fastify/compress'));
+
   // Register the swagger plugin
   server.register(swagger, {
     openapi: {
