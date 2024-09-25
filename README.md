@@ -35,11 +35,11 @@ Write a script which aggregates this data and makes a request to a mocked API at
 * REST API built on Fastify with extensible routes for future endpoints.
 * Unit and integration tests using Jest and Supertest for reliability.
 * Scalable and easily deployable with modular architecture and cloud-ready features.
-* By integrating Swagger into the app, you ensure that your API is both well-documented and easy to test, facilitating better collaboration and faster development.
+* Integrating Swagger into the app, ensuring that the API is both well-documented and easy to test, facilitating better collaboration and faster development.
 * API versioning to ensure backward compatibility with older clients if you need to introduce breaking changes.
 * Configured CORS (Cross-Origin Resource Sharing)  to prevent unauthorized external domains from accessing the API
 * Follow the Separation of Concerns (SoC) principle by making sure that each module/class focuses on one responsibility.
-
+* Utilize Fastify features to allow the application to stay performant, scalable, and easy to maintain while being modular and optimized for handling HTTP requests, logging, and error handling.
 
 ## Setup
 
