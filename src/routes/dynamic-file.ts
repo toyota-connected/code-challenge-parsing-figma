@@ -3,7 +3,7 @@ import { container } from '../inversify.config';
 import { FigmaController } from '../controllers/figma.controller';
 
 module.exports = async function (server: FastifyInstance) {
-  server.get('/figma/file/:fileId', {
+  server.get('/v1/figma/file/:fileId', {
     schema: {
       description: 'Fetch data from Figma API using a specific file ID',
       tags: ['Figma'],
